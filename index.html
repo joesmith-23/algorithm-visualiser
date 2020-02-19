@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Algorithm Visualiser</title>
+    <link rel="stylesheet" type="text/css" href="/public/bundled/style.css" />
+  </head>
+  <body>
+    <div class="app-conatiner">
+      <nav class="navbar-container">
+        <h2 class="navbar-title"><a href="/">Algorithm Visualiser</a></h2>
+        <h3>Pathfinding Visualiser</h3>
+        <div class="navbar-links">
+          <a href="sorting">Sorting</a>
+          <a href="pathfinding">Pathfinding</a>
+        </div>
+      </nav>
+      <div class="controls-container">
+        <button id="dijkstra">Visualise Dijkstra</button>
+        <button id="astar">Visualise A*</button>
+        <button id="bfs">Visualise BFS</button>
+        <button id="dfs">Visualise DFS</button>
+        <button id="reset">Reset Board</button>
+        <!-- <button id="remove-walls">Remove Walls</button> -->
+        <button id="random-walls">Set Random Walls</button>
+        <button id="clear-algorithm">Clear Algorithm</button>
+        <button id="recursive-division-maze">Recursive Division Maze</button>
+        <h3>Stats:</h3>
+        <p id="algo-distance"></p>
+      </div>
+      <div class="grid-container"></div>
+    </div>
+  </body>
+  <!-- <script type="module" src="/public/main.js"></script> -->
+  <script type="module" src="/public/bundled/bundle.js"></script>
+</html>

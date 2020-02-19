@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Algorithm Visualiser</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="app-conatiner">
+      <nav class="navbar-container">
+        <h2 class="navbar-title"><a href="/">Algorithm Visualiser</a></h2>
+        <h3>Sorting Visualiser</h3>
+        <div class="navbar-links">
+          <a href="pathfinding.html">Pathfinding</a>
+          <a href="sorting.html">Sorting</a>
+        </div>
+      </nav>
+      <div class="controls-container">
+        <div class="new-array-container">
+          <p>Choose number of lines</p>
+          <div class="new-array">
+            <input type='number' id="number-of-lines" value=50>
+            <button id="new-array">New Array</button>
+          </div>
+        </div>
+        <div class="new-array-container">
+          <p>Press button to visualise sorting algorithm</p>
+          <div class="new-array">
+            <button id="bubble-sort">Bubble Sort</button>
+            <button id="selection-sort">Selection Sort</button>
+            <button id="insertion-sort">Insertion Sort</button>
+            <button id="quicksort">Quicksort</button>
+            <button id="merge-sort">Merge Sort</button>
+            <button id="heap-sort">Heap Sort</button>
+          </div>
+        </div>
+        <div class="stats">
+          <h3>Stats</h3>
+          <div class="distance-container">
+            <div class="comparison-colour"></div>
+            <p>Comparisons:</p>
+            <p id="comparisons-number"></p>
+          </div>
+          <div class="time-container">
+            <div class="swaps-colour"></div>
+            <p>Swaps:</p>
+            <p id="swaps-number"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="canvas-container">
+        <canvas width="1000px" height="600px" id="main-canvas"></canvas>
+      </div>
+
+      <div class="extra-controls-container">
+        <h3>Playback Controls</h3>
+        <div class="horizontal-controls-container">
+          <div class='individual-controls-container'>
+            <p>Speed (ms)</p>
+            <input type="number" id="change-speed" value=50>  
+          </div>
+          <div class='individual-controls-container'>
+            <p>Pause/Play</p>
+            <button id="pause-step">></button>
+          </div>
+          <div class='individual-controls-container'>
+            <p>Next</p>
+            <button id="next-step">>></button>
+          </div>
+          <div class='individual-controls-container'>
+            <p>Reset</p>
+            <button id="reset-lines">Reset</button>
+          </div>
+        </div>
+      </div>
+  </body>
+  <script src="bundle.js"></script>
+</html>
