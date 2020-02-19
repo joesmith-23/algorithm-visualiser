@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Algorithm Visualiser</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="app-conatiner">
+      <nav class="navbar-container">
+        <h2 class="navbar-title"><a href="/">Algorithm Visualiser</a></h2>
+        <h3>Pathfinding Visualiser</h3>
+        <div class="navbar-links">
+          <a href="pathfinding.html">Pathfinding</a>
+          <a href="sorting.html">Sorting</a>
+        </div>
+      </nav>
+      <div class="controls-container">
+        <div class="visualise-algo-container">
+          <div class="visualise-algo-title">
+            <p>Visualise an Algorithm</p>
+          </div>
+          <div class="visualise-buttons">
+            <button id="dijkstra" class="algo-button">Dijkstra</button>
+            <button id="astar" class="algo-button">A*</button>
+            <button id="bfs" class="algo-button">BFS</button>
+            <button id="dfs" class="algo-button">DFS</button>
+          </div>
+        </div>
+
+        <div class="visualise-algo-container">
+          <div class="visualise-algo-title">
+            <p>Build some walls</p>
+          </div>
+          <div class="visualise-buttons">
+            <button id="recursive-division-maze" class="wall-button">
+              Recursive Division Maze
+            </button>
+            <button id="random-walls" class="wall-button">
+              Random Walls
+            </button>
+          </div>
+        </div>
+
+        <div class="visualise-algo-container">
+          <div class="visualise-algo-title">
+            <p>Clean up the board</p>
+          </div>
+          <div class="visualise-buttons">
+            <button id="reset">Reset Board</button>
+            <button id="clear-algorithm">Clear Algorithm</button>
+          </div>
+        </div>
+
+        <div class="stats">
+          <h3>Stats</h3>
+          <div class="distance-container">
+            <p>Distance:</p>
+            <p id="algo-distance"></p>
+          </div>
+          <div class="time-container">
+            <p>Time:</p>
+            <p id="algo-time"></p>
+          </div>
+        </div>
+      </div>
+      <div class="grid-container"></div>
+    </div>
+  </body>
+  <!-- <script type="module" src="/public/main.js"></script> -->
+  <script src="bundle.js"></script>
+</html>
